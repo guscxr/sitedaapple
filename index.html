@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Apple</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f7;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 15px;
+            border-bottom: 1px solid #e1e1e1;
+            width: 100%;
+            text-align: center;
+        }
+        header {
+         background: linear-gradient(to right, #f0f8ff, #dcd0ff, #ffcccb, #ffd700);
+         padding: 15px;
+         border-bottom: 1px solid #e1e1e1;
+         width: 100%;
+         text-align: center;
+         }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+
+        header nav a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .banner {
+            max-width: 1200px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .banner h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .product-nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px 0;
+            border-top: 1px solid #e1e1e1;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .product-nav img {
+            width: 60px;
+        }
+
+        .product-section {
+            max-width: 1200px;
+            margin-top: 20px;
+            text-align: left;
+            padding: 0 10px;
+        }
+
+        .product-section h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .product-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 1.1em;
+            color: #000;
+            margin-bottom: 8px;
+        }
+
+        .product-card p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .product-card .price {
+            font-size: 1em;
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        img{
+            border-radius: 10px;
+        }
+        .more-info-button {
+        display: block;
+        background-color: #007aff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 15px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        }
+
+        .more-info-button:hover {
+             background-color: #005bb5;
+        }
+        .color-options {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+        }
+
+        .color-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        transition: transform 0.3s;
+        }
+
+        .color-circle:hover {
+        transform: scale(1.1);
+        }
+
+        .color-circle.blue { background-color: #5bc0de; }
+        .color-circle.black { background-color: #333; }
+        .color-circle.gray { background-color: #ccc; }
+        .color-circle.green { background-color: #8fd9a8; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Loja</a>
+            <a href="#">Tabletes</a>
+            <a href="#">Notebooks</a>
+            <a href="#">Celulares</a>
+            <a href="#">Smart Watchs</a>
+            <a href="#">Fones de Ouvido</a>
+            <a href="#">TV e Casa</a>
+            <a href="#">Duvidas?</a>
+            <a href="Sobre nos.html">Sobre Nós</a>
+            <a href="Suporte.html">Suporte</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h1>PowerUp Especializada em Produtos Apple
+        </h1>
+        <p>Explore nossos produtos e veja o que chegou de novo.</p>
+    </div>
+
+    <div class="product-nav">
+        <img src="https://www.apple.com/v/mac/home/cb/images/overview/select/product_tile_mbp_14_16__bkl8zusnkpw2_large.png" alt="Mac">
+        <img src="https://www.apple.com/v/iphone/home/bx/images/overview/select/iphone_16pro__erw9alves2qa_xlarge.png" alt="iPhone">
+        <img src="https://www.apple.com/v/ipad/home/cl/images/overview/select/product-tile/pt_ipad_pro__6bgrkek0jnm2_xlarge.png" alt="iPad">
+        <img src="https://www.apple.com/v/watch/bo/images/overview/select/product_s10__deak4mdempoy_xlarge.png" alt="Apple Watch">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-pro-2-hero-select-202409_FV1?wid=976&hei=916&fmt=jpeg&qlt=90&.v=1725492499003" alt="AirPods">
+    </div>
+
+    <section class="product-section">
+        <h2>Veja o que acabou de chegar.</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>MacBook Pro</h3>
+                <img class="MacBook" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-macbook-pro-202410?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1728342374593" alt="MacBook Pro">
+                <p>Feito para Apple Intelligence™</p>
+                <div class="color-options">
+                    <div class="color-circle blue"></div>
+                    <div class="color-circle black"></div>
+                    <div class="color-circle gray"></div>
+                </div>
+                <p class="price">A partir de R$ 19.999</p>
+                <a href="Macbook pro.html" class="more-info-button">Saiba Mais</a>
+            </div>
+            <div class="product-card">
+                <h3>iMac</h3>
+                <img class="iMac" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-imac-202410?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1728341291219" alt="iMac">
+                <p>Feito para Apple Intelligence™</p>
+                <div class="color-options">
+                    <div class="color-circle blue"></div>
+                    <div class="color-circle black"></div>
+                    <div class="color-circle gray"></div>
+                </div>
+                <p class="price">A partir de R$ 15.499</p>
+                <a href="imac.html" class="more-info-button">Saiba Mais</a>
+            </div>
+            <div class="product-card">
+                <h3>Mac mini</h3>
+                <img class="Mac mini" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-mac-mini-202410?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1729266524928" alt="Mac mini">
+                <p>Feito para Apple Intelligence™</p>
+                <div class="color-options">
+                    <div class="color-circle blue"></div>
+                    <div class="color-circle black"></div>
+                    <div class="color-circle gray"></div>
+                </div>
+                <p class="price">A partir de R$ 7.499</p>
+                <a href="mac mini.html" class="more-info-button">Saiba Mais</a>
+            </div>
+            <div class="product-card">
+                <span class="new-tag">NOVO</span>
+                <h3>iPhone 16 Pro</h3>
+                <img class="iPhone" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-iphone-16-pro-202409?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1726165763242" alt="iPhone 16 Pro">
+                <p>O iPhone definitivo.</p>
+                <div class="color-options">
+                    <div class="color-circle blue"></div>
+                    <div class="color-circle black"></div>
+                    <div class="color-circle gray"></div>
+                </div>
+                <p class="price">A partir de R$ 10.499</p>
+                <a href="Pagina Iphone.html" class="more-info-button">Saiba Mais</a>
+            </div>
+            <div class="product-card">
+                <h3>iPad mini</h3>
+                <img class="Ipad mini" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-ipad-mini-202410_GEO_BR?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1728400504737" alt="iPad mini">
+                <p>Possibilidades de mão cheia.</p>
+                <div class="color-options">
+                    <div class="color-circle blue"></div>
+                    <div class="color-circle black"></div>
+                    <div class="color-circle gray"></div>
+                </div>  
+                <p class="price">A partir de R$ 5.999</p>
+                <a href="#" class="more-info-button">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+</html>

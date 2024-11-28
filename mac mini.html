@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerUp - Mac Mini</title>
+  <link rel="stylesheet" href="macmini-styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="product-title">Novo</h1>
+    <h2>Mac Mini</h2>
+    <p class="price">A partir de <span>R$ 7.999</span></p>
+  </header>
+<style>
+    /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.header .product-title {
+  color: #d14;
+  font-size: 18px;
+}
+
+.header h2 {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.header .price span {
+  color: #000;
+  font-weight: bold;
+}
+
+.product-display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+.image-slider img {
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.config-options {
+  max-width: 400px;
+}
+
+.config-options h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.config-options .options label {
+  display: block;
+  margin: 10px 0;
+}
+
+.storage-options {
+  padding: 30px;
+  text-align: center;
+}
+
+.storage-options h3,
+.performance-options h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.storage-options .options label,
+.performance-options .options label {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+.storage-options span,
+.performance-options span {
+  color: #000;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+  border-top: 1px solid #ddd;
+}
+
+.continue-button {
+  background: #0071e3;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  background: #005bb5;
+}
+
+
+</style>
+  <section class="product-display">
+    <div class="image-slider">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-mini-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1728265550767" alt="Mac Mini">
+    </div>
+    <div class="config-options">
+      <h3>Modelo. Qual é o ideal para você?</h3>
+      <div class="options">
+        <label>
+          <input type="radio" name="model" value="Mac Mini M2" checked>
+          Mac Mini M2 - <span>A partir de R$ 7.999</span>
+        </label>
+        <label>
+          <input type="radio" name="model" value="Mac Mini M2 Pro">
+          Mac Mini M2 Pro - <span>A partir de R$ 11.999</span>
+        </label>
+      </div>
+      <p class="help-text">
+        Encontre o equilíbrio perfeito entre desempenho e preço.
+      </p>
+    </div>
+  </section>
+
+  <section class="storage-options">
+    <h3>Armazenamento. De quanto espaço você precisa?</h3>
+    <div class="options">
+      <label>
+        <input type="radio" name="storage" value="256GB" checked>
+        256GB SSD - <span>A partir de R$ 7.999</span>
+      </label>
+      <label>
+        <input type="radio" name="storage" value="512GB">
+        512GB SSD - <span>A partir de R$ 9.499</span>
+      </label>
+      <label>
+        <input type="radio" name="storage" value="1TB">
+        1TB SSD - <span>A partir de R$ 11.999</span>
+      </label>
+      <label>
+        <input type="radio" name="storage" value="2TB">
+        2TB SSD - <span>A partir de R$ 14.499</span>
+      </label>
+    </div>
+  </section>
+
+  <section class="performance-options">
+    <h3>Desempenho. Escolha sua configuração de RAM:</h3>
+    <div class="options">
+      <label>
+        <input type="radio" name="ram" value="8GB" checked>
+        8GB - <span>Padrão</span>
+      </label>
+      <label>
+        <input type="radio" name="ram" value="16GB">
+        16GB - <span>A partir de R$ 1.999 adicionais</span>
+      </label>
+      <label>
+        <input type="radio" name="ram" value="32GB">
+        32GB - <span>A partir de R$ 3.999 adicionais</span>
+      </label>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <button class="continue-button">Continuar</button>
+  </footer>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>
